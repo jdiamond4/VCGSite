@@ -11,7 +11,7 @@ function LinkedInIcon() {
 }
 
 export function ExecCard({ member }: { member: ExecMember }) {
-  const ref = useRef<HTMLArticleElement>(null)
+  const ref = useRef<HTMLElement>(null)
   const [visible, setVisible] = useState(false)
 
   useEffect(() => {

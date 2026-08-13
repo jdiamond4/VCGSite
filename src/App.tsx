@@ -3,6 +3,8 @@ import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom'
 import { Home } from './pages/Home'
 import { Clients } from './pages/Clients'
 import { Exec } from './pages/Exec'
+import { ProjectTeams } from './pages/ProjectTeams'
+import { Alumni } from './pages/Alumni'
 
 function ScrollToTop() {
   const { pathname, hash } = useLocation()
@@ -29,6 +31,8 @@ export default function App() {
         <Route path="/" element={<Home />} />
         <Route path="/clients" element={<Clients />} />
         <Route path="/exec" element={<Exec />} />
+        <Route path="/project-teams" element={<ProjectTeams />} />
+        <Route path="/alumni" element={<Alumni />} />
       </Routes>
     </BrowserRouter>
   )
