@@ -1,0 +1,124 @@
+.nav {
+  position: fixed;
+  inset: 0 0 auto;
+  z-index: 50;
+  height: var(--nav-h);
+  transition: background 0.35s var(--ease-out), border-color 0.35s var(--ease-out),
+    backdrop-filter 0.35s var(--ease-out);
+  border-bottom: 1px solid transparent;
+}
+
+.nav--scrolled {
+  background: rgba(245, 245, 247, 0.78);
+  backdrop-filter: saturate(180%) blur(18px);
+  -webkit-backdrop-filter: saturate(180%) blur(18px);
+  border-bottom-color: var(--line);
+}
+
+.nav__inner {
+  max-width: 1180px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.nav__brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.7rem;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: -0.02em;
+  color: #fff;
+  text-shadow: 0 1px 12px rgba(8, 16, 28, 0.25);
+  transition: color 0.25s ease, text-shadow 0.25s ease;
+}
+
+.nav--scrolled .nav__brand {
+  color: var(--ink);
+  text-shadow: none;
+}
+
+.nav__brand img {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+}
+
+.nav__logo--dark {
+  display: none;
+}
+
+.nav--scrolled .nav__logo--light {
+  display: none;
+}
+
+.nav--scrolled .nav__logo--dark {
+  display: block;
+}
+
+.nav__links {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.nav__links a {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.88);
+  transition: color 0.2s ease;
+}
+
+.nav__links a:hover {
+  color: #fff;
+}
+
+.nav--scrolled .nav__links a {
+  color: var(--ink-soft);
+}
+
+.nav--scrolled .nav__links a:hover {
+  color: var(--ink);
+}
+
+.nav__cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.55rem 1rem;
+  border-radius: 8px;
+  background: #fff;
+  color: var(--navy) !important;
+  font-weight: 600 !important;
+  transition: transform 0.2s var(--ease-out), background 0.2s ease, color 0.2s ease;
+}
+
+.nav__cta:hover {
+  background: #f2f2f4;
+  transform: translateY(-1px);
+}
+
+.nav--scrolled .nav__cta {
+  background: var(--navy);
+  color: #fff !important;
+}
+
+.nav--scrolled .nav__cta:hover {
+  background: var(--navy-soft);
+}
+
+@media (max-width: 640px) {
+  .nav__brand span {
+    display: none;
+  }
+
+  .nav__links a:not(.nav__cta):not([href='/clients']):not([href='/exec']) {
+    display: none;
+  }
+}
