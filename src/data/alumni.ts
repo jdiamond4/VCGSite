@@ -1,7 +1,7 @@
 export type AlumniMember = {
   id: string
   name: string
-  graduationYear: 2023 | 2024 | 2025
+  graduationYear: 2024 | 2025 | 2026
   title: string
   company: string
   image?: string
@@ -9,7 +9,69 @@ export type AlumniMember = {
   linkedin?: string
 }
 
-const graduationYears: AlumniMember['graduationYear'][] = [2025, 2024, 2023]
+const graduationYears: AlumniMember['graduationYear'][] = [2026, 2025, 2024]
+
+const classOf2026: AlumniMember[] = [
+  {
+    id: 'dario-petrillo',
+    name: 'Dario Petrillo',
+    graduationYear: 2026,
+    title: 'Incoming Associate',
+    company: 'Boston Consulting Group',
+    image: '/alumni/dario-petrillo.png',
+    companyLogo: '/logos/bcg.png',
+    linkedin: 'https://www.linkedin.com/in/dario-petrillo-a3596428a/',
+  },
+  {
+    id: 'liam-tuohy',
+    name: 'Liam Tuohy',
+    graduationYear: 2026,
+    title: 'Incoming Associate Consultant',
+    company: 'Bain & Company',
+    image: '/alumni/liam-tuohy.png',
+    companyLogo: '/logos/bain.png',
+    linkedin: 'https://www.linkedin.com/in/liam-tuohy-530400237/',
+  },
+  {
+    id: 'akshay-kulkarni',
+    name: 'Akshay Kulkarni',
+    graduationYear: 2026,
+    title: 'Incoming Investment Associate',
+    company: 'Citadel',
+    image: '/alumni/akshay-kulkarni.png',
+    companyLogo: '/logos/citadel-alumni.png',
+    linkedin: 'https://www.linkedin.com/in/akshay-kulkarni04/',
+  },
+  {
+    id: 'stefan-van-biljon',
+    name: 'Stefan van Biljon',
+    graduationYear: 2026,
+    title: 'Incoming Associate',
+    company: 'Boston Consulting Group',
+    image: '/alumni/stefan-van-biljon.png',
+    companyLogo: '/logos/bcg.png',
+    linkedin: 'https://www.linkedin.com/in/stefan-van-biljon-5b8ab8249/',
+  },
+  {
+    id: 'katherine-walldorf',
+    name: 'Katherine Walldorf',
+    graduationYear: 2026,
+    title: 'Investment Banking Analyst',
+    company: 'Lazard',
+    image: '/alumni/katherine-walldorf.png',
+    companyLogo: '/logos/lazard-alumni.png',
+    linkedin: 'https://www.linkedin.com/in/katewalldorf/',
+  },
+  {
+    id: 'kendall-freese',
+    name: 'Kendall Freese',
+    graduationYear: 2026,
+    title: 'Investment Banking Analyst',
+    company: 'Berkshire Global Advisors',
+    image: '/alumni/kendall-freese.png',
+    linkedin: 'https://www.linkedin.com/in/kendall-freese-2439aa244/',
+  },
+]
 
 const classOf2025: AlumniMember[] = [
   {
@@ -116,19 +178,7 @@ const classOf2024: AlumniMember[] = [
   },
 ]
 
-const placeholderAlumni: AlumniMember[] = graduationYears
-  .filter((year) => year === 2023)
-  .flatMap((graduationYear) =>
-    Array.from({ length: 5 }, (_, index) => ({
-      id: `${graduationYear}-${index + 1}`,
-      name: 'Alumni Name',
-      graduationYear,
-      title: 'Current Title',
-      company: 'Company',
-    })),
-  )
-
-export const alumni: AlumniMember[] = [...classOf2025, ...classOf2024, ...placeholderAlumni]
+export const alumni: AlumniMember[] = [...classOf2026, ...classOf2025, ...classOf2024]
 
 export const alumniByYear = graduationYears.map((year) => ({
   year,

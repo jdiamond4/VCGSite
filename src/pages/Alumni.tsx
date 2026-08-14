@@ -1,6 +1,6 @@
 import { Footer } from '../components/Footer'
 import { Navbar } from '../components/Navbar'
-import { AlumniCard } from '../components/AlumniCard'
+import { AlumniCarousel } from '../components/AlumniCarousel'
 import { alumniByYear } from '../data/alumni'
 import './Alumni.css'
 
@@ -45,11 +45,7 @@ export function Alumni() {
                 </div>
               </div>
 
-              <div className="alumni__grid">
-                {members.map((member) => (
-                  <AlumniCard key={member.id} member={member} />
-                ))}
-              </div>
+              <AlumniCarousel members={members} year={year} />
             </section>
           ))}
         </div>

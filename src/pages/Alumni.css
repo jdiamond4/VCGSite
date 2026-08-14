@@ -122,18 +122,6 @@
   color: var(--ink);
 }
 
-.alumni__grid {
-  display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
-  gap: 1.25rem;
-}
-
-@media (max-width: 1040px) {
-  .alumni__grid {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-}
-
 @media (max-width: 640px) {
   .alumni__hero {
     padding: 3.75rem 1.25rem 2.5rem;
@@ -167,24 +155,5 @@
 
   .alumni__class-heading {
     padding-right: 1.25rem;
-  }
-
-  .alumni__grid {
-    display: flex;
-    overflow-x: auto;
-    padding: 0.25rem 1.25rem 1.25rem 0;
-    gap: 1rem;
-    scroll-padding-left: 1.25rem;
-    scroll-snap-type: x mandatory;
-    scrollbar-width: none;
-  }
-
-  .alumni__grid::-webkit-scrollbar {
-    display: none;
-  }
-
-  .alumni__grid .alumni-card {
-    width: min(76vw, 17rem);
-    flex: 0 0 auto;
   }
 }
