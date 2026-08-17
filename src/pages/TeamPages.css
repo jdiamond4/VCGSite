@@ -28,10 +28,6 @@
   color: var(--ink);
 }
 
-#project-teams-heading {
-  font-family: 'Manrope', sans-serif;
-}
-
 .team-page__projects {
   padding: 0 1.5rem 6rem;
 }
