@@ -287,6 +287,115 @@
   text-transform: uppercase;
 }
 
+.apply__faq {
+  padding: clamp(4.5rem, 8vw, 7rem) 0 clamp(3.5rem, 6vw, 5rem);
+  background: var(--bg);
+}
+
+.apply__faq .apply__section-head {
+  margin-bottom: 2.25rem;
+  text-align: center;
+  justify-items: center;
+}
+
+.apply__faq .apply__section-head h2 {
+  max-width: none;
+  white-space: nowrap;
+  font-size: clamp(1.35rem, 4vw, 2.1rem);
+}
+
+.apply__faq .apply__section-head > div > p {
+  margin-inline: auto;
+}
+
+.apply__faq-list {
+  display: grid;
+  max-width: 42rem;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+}
+
+.apply__faq-item {
+  border-bottom: 1px solid var(--line);
+}
+
+.apply__faq-trigger {
+  display: flex;
+  width: 100%;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding: 1.15rem 0;
+  border: 0;
+  color: var(--ink);
+  background: transparent;
+  text-align: left;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.apply__faq-trigger:hover {
+  color: var(--muted);
+}
+
+.apply__faq-trigger:focus-visible {
+  outline: 2px solid var(--navy);
+  outline-offset: 4px;
+  border-radius: 4px;
+}
+
+.apply__faq-question {
+  font-size: 1.02rem;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  line-height: 1.4;
+}
+
+.apply__faq-icon {
+  flex-shrink: 0;
+  color: var(--muted);
+  transition: transform 0.3s var(--ease-out);
+}
+
+.apply__faq-icon svg {
+  display: block;
+}
+
+.apply__faq-item--open .apply__faq-icon {
+  transform: rotate(180deg);
+}
+
+.apply__faq-panel {
+  display: grid;
+  grid-template-rows: 0fr;
+  visibility: hidden;
+  transition:
+    grid-template-rows 0.32s var(--ease-out),
+    visibility 0s linear 0.32s;
+}
+
+.apply__faq-item--open .apply__faq-panel {
+  grid-template-rows: 1fr;
+  visibility: visible;
+  transition:
+    grid-template-rows 0.32s var(--ease-out),
+    visibility 0s linear 0s;
+}
+
+.apply__faq-answer {
+  overflow: hidden;
+}
+
+.apply__faq-answer p {
+  max-width: none;
+  margin: 0;
+  padding: 0 0 1.25rem;
+  color: var(--ink);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
 .apply__closing {
   padding: clamp(4.5rem, 8vw, 7rem) 1.5rem;
   text-align: center;
@@ -391,6 +500,14 @@
     padding: 0 1.25rem;
   }
 
+  .apply__faq-trigger {
+    gap: 1rem;
+  }
+
+  .apply__faq-answer p {
+    padding: 0 0 1.25rem;
+  }
+
   .apply__step--featured .apply__step-copy {
     padding-right: 0;
   }
@@ -416,7 +533,8 @@
     background: var(--navy);
   }
 
-  .apply__step {
+  .apply__step,
+  .apply__faq-item {
     border-color: rgba(29, 29, 31, 0.4);
   }
 }

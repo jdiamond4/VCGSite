@@ -1,8 +1,42 @@
+import { useState } from 'react'
 import { Footer } from '../components/Footer'
 import { Navbar } from '../components/Navbar'
 import './Apply.css'
 
 const applicationUrl = 'https://forms.gle/LJv3Xh1SJyj2xp3e8'
+
+const faqs = [
+  {
+    question: 'Who can apply?',
+    answer:
+      'Any UVA student, from any school or year. No prior experience needed.',
+  },
+  {
+    question: 'Do I need a business background?',
+    answer:
+      'No. Our members come from every major. We care about how you think, not what you study.',
+  },
+  {
+    question: 'What does the application involve?',
+    answer:
+      'A short written application, followed by two interview rounds and a final social event.',
+  },
+  {
+    question: 'How should I prepare for interviews?',
+    answer:
+      'Be ready to talk through your experiences and work a case in round two. No memorized frameworks needed.',
+  },
+  {
+    question: 'What’s the time commitment?',
+    answer:
+      'A semester-long project team, plus general body meetings and socials. It fits around a full course load.',
+  },
+  {
+    question: 'When are applications due?',
+    answer:
+      'Aug 30. Interview dates are shared with candidates as the process moves forward.',
+  },
+]
 
 const timeline = [
   {
@@ -51,6 +85,20 @@ const timeline = [
 ]
 
 export function Apply() {
+  const [openFaqs, setOpenFaqs] = useState<Set<number>>(new Set())
+
+  const toggleFaq = (index: number) => {
+    setOpenFaqs((prev) => {
+      const next = new Set(prev)
+      if (next.has(index)) {
+        next.delete(index)
+      } else {
+        next.add(index)
+      }
+      return next
+    })
+  }
+
   return (
     <>
       <Navbar />
@@ -108,6 +156,54 @@ export function Apply() {
                 </li>
               ))}
             </ol>
+          </div>
+        </section>
+
+        <section className="apply__faq" id="faq" aria-labelledby="faq-heading">
+          <div className="apply__section-inner">
+            <div className="apply__section-head">
+              <div>
+                <h2 id="faq-heading">Frequently asked questions</h2>
+                <p>Still curious? Reach out at an info session or coffee chat and we’ll answer anything.</p>
+              </div>
+            </div>
+
+            <ul className="apply__faq-list">
+              {faqs.map((item, index) => {
+                const isOpen = openFaqs.has(index)
+                const panelId = `faq-panel-${index}`
+                const buttonId = `faq-trigger-${index}`
+                return (
+                  <li className={isOpen ? 'apply__faq-item apply__faq-item--open' : 'apply__faq-item'} key={item.question}>
+                    <button
+                      type="button"
+                      className="apply__faq-trigger"
+                      id={buttonId}
+                      aria-expanded={isOpen}
+                      aria-controls={panelId}
+                      onClick={() => toggleFaq(index)}
+                    >
+                      <span className="apply__faq-question">{item.question}</span>
+                      <span className="apply__faq-icon" aria-hidden="true">
+                        <svg viewBox="0 0 16 16" width="16" height="16">
+                          <path d="M4 6.5 8 10.5 12 6.5" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                        </svg>
+                      </span>
+                    </button>
+                    <div
+                      className="apply__faq-panel"
+                      id={panelId}
+                      role="region"
+                      aria-labelledby={buttonId}
+                    >
+                      <div className="apply__faq-answer">
+                        <p>{item.answer}</p>
+                      </div>
+                    </div>
+                  </li>
+                )
+              })}
+            </ul>
           </div>
         </section>
 
