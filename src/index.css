@@ -10,7 +10,7 @@
   --accent: #0b1f3a;
   --glow: rgba(11, 31, 58, 0.06);
   --radius-sm: 10px;
-  --font-display: 'Syne', sans-serif;
+  --font-display: 'Libre Franklin', 'Franklin Gothic Medium', 'Franklin Gothic', Arial, sans-serif;
   --font-body: 'Outfit', sans-serif;
   --nav-h: 72px;
   --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
