@@ -189,62 +189,81 @@
   display: grid;
   margin: 0;
   padding: 0;
-  border-top: 1px solid rgba(29, 29, 31, 0.12);
   list-style: none;
 }
 
 .apply__step {
   position: relative;
   display: grid;
-  grid-template-columns: 4.5rem 8rem minmax(0, 1fr) auto;
+  grid-template-columns: 3rem 7rem minmax(0, 1fr) auto;
   align-items: center;
-  min-height: 9rem;
+  min-height: 6.5rem;
   gap: 1.5rem;
-  padding: 1.5rem 1.25rem 1.5rem 0;
-  border-bottom: 1px solid rgba(29, 29, 31, 0.12);
+  padding: 1.1rem 1.25rem 1.1rem 0;
   transition:
     background 0.28s ease,
-    padding 0.28s var(--ease-out),
     border-radius 0.28s ease;
 }
 
+.apply__step::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0.9rem;
+  z-index: 0;
+  width: 1px;
+  background: rgba(29, 29, 31, 0.14);
+}
+
+.apply__step:first-child::before {
+  top: 50%;
+}
+
+.apply__step:last-child::before {
+  bottom: 50%;
+}
+
 .apply__step:hover {
-  padding-right: 1.5rem;
-  padding-left: 1.25rem;
-  border-color: transparent;
   border-radius: 1rem;
-  background: rgba(255, 255, 255, 0.72);
+  background: rgba(255, 255, 255, 0.7);
 }
 
 .apply__step-marker {
+  position: relative;
+  z-index: 1;
   display: grid;
-  width: 2.65rem;
-  height: 2.65rem;
+  width: 1.8rem;
+  height: 1.8rem;
   place-items: center;
-  border: 1px solid rgba(11, 31, 58, 0.14);
+  border: 1px solid rgba(11, 31, 58, 0.16);
   border-radius: 50%;
   color: var(--muted);
-  background: rgba(255, 255, 255, 0.55);
+  background: var(--bg);
+}
+
+.apply__step:hover .apply__step-marker {
+  background: #fff;
 }
 
 .apply__step-marker span {
-  font-size: 0.7rem;
-  font-weight: 600;
-  letter-spacing: 0.06em;
-}
-
-.apply__step time {
-  color: var(--navy);
-  font-size: 0.88rem;
+  font-size: 0.66rem;
   font-weight: 600;
   letter-spacing: 0.02em;
 }
 
+.apply__step time {
+  color: var(--navy);
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
 .apply__phase {
   display: block;
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.2rem;
   color: var(--muted);
-  font-size: 0.68rem;
+  font-size: 0.66rem;
   font-weight: 600;
   letter-spacing: 0.12em;
   text-transform: uppercase;
@@ -253,26 +272,25 @@
 .apply__step h3 {
   margin: 0;
   color: var(--ink);
-  font-family: var(--font-display);
-  font-size: clamp(1.15rem, 2vw, 1.45rem);
-  font-weight: 700;
-  letter-spacing: -0.025em;
+  font-size: clamp(1.05rem, 1.6vw, 1.2rem);
+  font-weight: 600;
+  letter-spacing: -0.015em;
 }
 
 .apply__step-copy p {
-  margin: 0.42rem 0 0;
+  margin: 0.3rem 0 0;
   color: var(--muted);
-  font-size: 0.95rem;
-  line-height: 1.45;
-}
-
-.apply__step--featured {
-  border-bottom-color: rgba(29, 29, 31, 0.12);
+  font-size: 0.92rem;
+  line-height: 1.5;
 }
 
 .apply__step--featured .apply__step-marker {
   color: #fff;
   border-color: var(--navy);
+  background: var(--navy);
+}
+
+.apply__step--featured:hover .apply__step-marker {
   background: var(--navy);
 }
 
@@ -456,17 +474,18 @@
   }
 
   .apply__step {
-    grid-template-columns: 3.25rem minmax(0, 1fr);
-    gap: 0.8rem 1rem;
-    padding: 1.5rem 0;
+    grid-template-columns: 2.4rem minmax(0, 1fr);
+    gap: 0.5rem 0.9rem;
+    padding: 1.4rem 0;
   }
 
   .apply__step:hover {
-    padding: 1.5rem 1rem;
+    padding: 1.4rem 0.9rem 1.4rem 0;
   }
 
   .apply__step-marker {
     grid-row: 1 / span 2;
+    align-self: center;
   }
 
   .apply__step time {
