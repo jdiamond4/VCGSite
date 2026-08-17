@@ -16,4 +16,9 @@ export const placements: Placement[] = [
   { name: 'Alvarez & Marsal', src: '/logos/alvarez-marsal.png' },
   { name: 'EY-Parthenon', src: '/logos/ey-parthenon.png' },
   { name: 'J.P. Morgan', src: '/logos/jpmorgan.png' },
+  { name: 'Citadel', src: '/logos/citadel-alumni.png' },
+  { name: 'Lazard', src: '/logos/lazard-alumni.png' },
+  { name: 'Amazon', src: '/logos/amazon-alumni.png' },
+  { name: 'Morgan Stanley', src: '/logos/morgan-stanley-alumni.png' },
+  { name: 'Barclays', src: '/logos/barclays-alumni.png' },
 ]
