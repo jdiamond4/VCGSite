@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useRef } from 'react'
 import './ProjectTimeline.css'
 
 const timeline = [
@@ -30,10 +30,8 @@ const timeline = [
 
 export function ProjectTimeline() {
   const trackRef = useRef<HTMLDivElement>(null)
+  const spineFillRef = useRef<HTMLDivElement>(null)
   const itemRefs = useRef<(HTMLLIElement | null)[]>([])
-  const [progress, setProgress] = useState(0)
-  const [activeIndex, setActiveIndex] = useState(-1)
-  const [revealed, setRevealed] = useState<boolean[]>(() => timeline.map(() => false))
 
   useEffect(() => {
     const items = itemRefs.current.filter(Boolean) as HTMLLIElement[]
@@ -41,14 +39,11 @@ export function ProjectTimeline() {
 
     const observer = new IntersectionObserver(
       (entries) => {
-        setRevealed((prev) => {
-          const next = [...prev]
-          for (const entry of entries) {
-            const index = Number((entry.target as HTMLElement).dataset.index)
-            if (entry.isIntersecting) next[index] = true
-          }
-          return next
-        })
+        for (const entry of entries) {
+          if (!entry.isIntersecting) continue
+          entry.target.classList.add('timeline__step--revealed')
+          observer.unobserve(entry.target)
+        }
       },
       { threshold: 0.35, rootMargin: '0px 0px -8% 0px' },
     )
@@ -59,9 +54,12 @@ export function ProjectTimeline() {
 
   useEffect(() => {
     const track = trackRef.current
-    if (!track) return
+    const spineFill = spineFillRef.current
+    const items = itemRefs.current.filter(Boolean) as HTMLLIElement[]
+    if (!track || !spineFill) return
 
     let frame = 0
+    let previousActive = -2
 
     const update = () => {
       const rect = track.getBoundingClientRect()
@@ -70,13 +68,19 @@ export function ProjectTimeline() {
       const end = viewport * 0.28
       const raw = (start - rect.top) / (rect.height + (start - end))
       const next = Math.min(1, Math.max(0, raw))
-      setProgress(next)
+      spineFill.style.transform = `scaleY(${next})`
 
       const active = Math.min(
         timeline.length - 1,
         Math.max(-1, Math.floor(next * timeline.length - 0.05)),
       )
-      setActiveIndex(active)
+      if (active === previousActive) return
+
+      items.forEach((item, index) => {
+        item.classList.toggle('timeline__step--active', index <= active)
+        item.classList.toggle('timeline__step--current', index === active)
+      })
+      previousActive = active
     }
 
     const onScroll = () => {
@@ -105,40 +109,29 @@ export function ProjectTimeline() {
 
         <div className="timeline" ref={trackRef}>
           <div className="timeline__spine" aria-hidden="true">
-            <div className="timeline__spine-fill" style={{ transform: `scaleY(${progress})` }} />
+            <div className="timeline__spine-fill" ref={spineFillRef} />
           </div>
 
           <ol className="timeline__steps">
-            {timeline.map((step, index) => {
-              const isActive = index <= activeIndex
-              const isCurrent = index === activeIndex
-              return (
-                <li
-                  key={step.title}
-                  ref={(node) => {
-                    itemRefs.current[index] = node
-                  }}
-                  data-index={index}
-                  className={[
-                    'timeline__step',
-                    revealed[index] ? 'timeline__step--revealed' : '',
-                    isActive ? 'timeline__step--active' : '',
-                    isCurrent ? 'timeline__step--current' : '',
-                  ]
-                    .filter(Boolean)
-                    .join(' ')}
-                >
-                  <div className="timeline__marker" aria-hidden="true">
-                    <span className="timeline__dot" />
-                  </div>
-                  <div className="timeline__content">
-                    <p className="timeline__phase">{step.phase}</p>
-                    <h3>{step.title}</h3>
-                    <p>{step.detail}</p>
-                  </div>
-                </li>
-              )
-            })}
+            {timeline.map((step, index) => (
+              <li
+                key={step.title}
+                ref={(node) => {
+                  itemRefs.current[index] = node
+                }}
+                data-index={index}
+                className="timeline__step"
+              >
+                <div className="timeline__marker" aria-hidden="true">
+                  <span className="timeline__dot" />
+                </div>
+                <div className="timeline__content">
+                  <p className="timeline__phase">{step.phase}</p>
+                  <h3>{step.title}</h3>
+                  <p>{step.detail}</p>
+                </div>
+              </li>
+            ))}
           </ol>
         </div>
       </div>

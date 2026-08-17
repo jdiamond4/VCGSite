@@ -44,6 +44,10 @@
   animation: ticker-scroll 42s linear infinite;
 }
 
+.ticker--paused .ticker__track {
+  animation-play-state: paused;
+}
+
 .ticker__item {
   flex: 0 0 auto;
   height: 44px;

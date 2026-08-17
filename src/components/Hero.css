@@ -26,8 +26,6 @@
   height: 100%;
   object-fit: cover;
   object-position: center 38%;
-  transform: scale(1.04);
-  animation: hero-ken 18s var(--ease-out) forwards;
 }
 
 .hero__veil {
@@ -41,9 +39,8 @@
 .hero__grain {
   position: absolute;
   inset: 0;
-  opacity: 0.14;
-  mix-blend-mode: soft-light;
-  background-image: radial-gradient(rgba(255, 255, 255, 0.18) 0.5px, transparent 0.5px);
+  opacity: 0.06;
+  background-image: radial-gradient(rgba(255, 255, 255, 0.24) 0.5px, transparent 0.5px);
   background-size: 3px 3px;
   pointer-events: none;
 }
@@ -161,12 +158,6 @@
   to {
     opacity: 1;
     transform: translateY(0);
-  }
-}
-
-@keyframes hero-ken {
-  to {
-    transform: scale(1);
   }
 }
 

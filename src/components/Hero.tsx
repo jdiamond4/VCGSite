@@ -7,7 +7,15 @@ export function Hero() {
     <section className="hero" id="top" aria-labelledby="hero-heading">
       <div className="hero__stage">
         <div className="hero__media" aria-hidden="true">
-          <img src="/brand/hero.jpg" alt="" className="hero__image" />
+          <img
+            src="/brand/hero.jpg"
+            alt=""
+            className="hero__image"
+            width={1024}
+            height={682}
+            fetchPriority="high"
+            decoding="async"
+          />
           <div className="hero__veil" />
           <div className="hero__grain" />
         </div>

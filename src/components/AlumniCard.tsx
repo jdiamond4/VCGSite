@@ -23,7 +23,14 @@ export function AlumniCard({ member }: { member: AlumniMember }) {
     <article className="alumni-card">
       <div className="alumni-card__portrait">
         {member.image ? (
-          <img src={member.image} alt={`${member.name}, VCG Class of ${member.graduationYear}`} loading="lazy" />
+          <img
+            src={member.image}
+            alt={`${member.name}, VCG Class of ${member.graduationYear}`}
+            width={640}
+            height={640}
+            loading="lazy"
+            decoding="async"
+          />
         ) : (
           <div className="alumni-card__placeholder" aria-hidden="true">
             <span>{getInitials(member.name)}</span>
