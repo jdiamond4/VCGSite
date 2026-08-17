@@ -1,6 +1,6 @@
 # Virginia Consulting Group
 
-Homepage MVP for [vcguva.com](http://vcguva.com/) — React + Vite, Apple/WUCC-inspired light design.
+A simple redesign of the [Virginia Consulting Group website](http://vcguva.com/), made by Justin Diamond.
 
 ## Develop
 
