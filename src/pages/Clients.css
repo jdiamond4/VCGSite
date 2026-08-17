@@ -31,7 +31,7 @@
 
 .clients__hero p:not(.eyebrow) {
   margin: 1.25rem 0 0;
-  max-width: 38rem;
+  max-width: none;
   font-size: 1.12rem;
   line-height: 1.55;
   color: rgba(255, 255, 255, 0.78);
@@ -44,7 +44,7 @@
 }
 
 .clients__section-head {
-  max-width: 40rem;
+  max-width: none;
   margin-bottom: 2.75rem;
 }
 

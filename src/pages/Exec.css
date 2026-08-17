@@ -28,7 +28,7 @@
 
 .exec__hero p:not(.eyebrow) {
   margin: 1.15rem 0 0;
-  max-width: 42rem;
+  max-width: none;
   font-size: 1.12rem;
   line-height: 1.55;
   color: var(--ink-soft);

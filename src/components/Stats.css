@@ -132,7 +132,7 @@
 }
 
 .stats__work-head > div {
-  max-width: 40rem;
+  max-width: none;
 }
 
 .stats__work-head h3 {

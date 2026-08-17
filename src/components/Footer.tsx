@@ -17,9 +17,7 @@ export function Footer() {
           <p>Explore</p>
           <Link to="/exec">Executive board →</Link>
           <Link to="/clients">Client services →</Link>
-          <a href="https://forms.gle/LJv3Xh1SJyj2xp3e8" target="_blank" rel="noreferrer">
-            Start your application →
-          </a>
+          <Link to="/apply">Application process →</Link>
         </div>
       </div>
 

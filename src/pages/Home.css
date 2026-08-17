@@ -45,7 +45,7 @@
 
 .invite p {
   margin: 1rem 0 0;
-  max-width: 34rem;
+  max-width: none;
   font-size: 1.08rem;
   line-height: 1.5;
   color: rgba(255, 255, 255, 0.78);

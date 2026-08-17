@@ -5,6 +5,7 @@ import { Clients } from './pages/Clients'
 import { Exec } from './pages/Exec'
 import { ProjectTeams } from './pages/ProjectTeams'
 import { Alumni } from './pages/Alumni'
+import { Apply } from './pages/Apply'
 
 function ScrollToTop() {
   const { pathname, hash } = useLocation()
@@ -33,6 +34,7 @@ export default function App() {
         <Route path="/exec" element={<Exec />} />
         <Route path="/project-teams" element={<ProjectTeams />} />
         <Route path="/alumni" element={<Alumni />} />
+        <Route path="/apply" element={<Apply />} />
       </Routes>
     </BrowserRouter>
   )

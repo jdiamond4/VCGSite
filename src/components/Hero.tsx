@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { LogoTicker } from './LogoTicker'
 import './Hero.css'
 
@@ -23,17 +24,15 @@ export function Hero() {
             join VCG.
           </p>
           <div className="hero__actions reveal reveal--delay-3">
-            <a
-              className="btn btn--primary"
-              href="https://forms.gle/LJv3Xh1SJyj2xp3e8"
-              target="_blank"
-              rel="noreferrer"
-            >
+            <Link className="btn btn--primary" to="/apply">
               Apply now
-            </a>
-            <a className="btn btn--ghost" href="#glance">
-              Why VCG
-            </a>
+            </Link>
+            <Link className="btn btn--ghost" to="/exec">
+              Who we are
+            </Link>
+            <Link className="btn btn--ghost" to="/clients">
+              What we do
+            </Link>
           </div>
         </div>
       </div>

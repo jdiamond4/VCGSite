@@ -79,9 +79,9 @@ export function Navbar() {
             </div>
           </div>
           <Link to="/clients">Clients</Link>
-          <a className="nav__cta" href="https://forms.gle/LJv3Xh1SJyj2xp3e8" target="_blank" rel="noreferrer">
+          <Link className="nav__cta" to="/apply">
             Apply
-          </a>
+          </Link>
         </nav>
       </div>
     </header>

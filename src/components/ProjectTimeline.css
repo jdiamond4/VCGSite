@@ -129,7 +129,7 @@
 
 .timeline__content p:not(.timeline__phase) {
   margin: 0.65rem 0 0;
-  max-width: 34rem;
+  max-width: none;
   font-size: 1.02rem;
   line-height: 1.55;
   color: var(--ink-soft);
