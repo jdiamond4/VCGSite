@@ -21,17 +21,14 @@ export function Hero() {
         </div>
 
         <div className="hero__content">
-          <p className="hero__brand reveal">Virginia Consulting Group</p>
-          <h1 id="hero-heading" className="hero__title reveal reveal--delay-1">
-            Unique analysts.
-            <br />
-            Proven success.
+          <h1 id="hero-heading" className="hero__brand reveal">
+            Virginia Consulting Group
           </h1>
-          <p className="hero__lede reveal reveal--delay-2">
-            Great ideas come from everyone, everywhere. You don't have to be a business student to
-            join VCG.
+          <p className="hero__lede reveal reveal--delay-1">
+            VCG is UVA’s founding consulting club, with over a decade of experience working with
+            Fortune 500 and market-leading organizations.
           </p>
-          <div className="hero__actions reveal reveal--delay-3">
+          <div className="hero__actions reveal reveal--delay-2">
             <Link className="btn btn--primary" to="/apply">
               Apply now
             </Link>

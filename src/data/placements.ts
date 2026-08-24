@@ -21,4 +21,7 @@ export const placements: Placement[] = [
   { name: 'Amazon', src: '/logos/amazon-alumni.png' },
   { name: 'Morgan Stanley', src: '/logos/morgan-stanley-alumni.png' },
   { name: 'Barclays', src: '/logos/barclays-alumni.png' },
+  { name: 'Oliver Wyman', src: '/logos/oliver-wyman.png' },
+  { name: 'Blackstone', src: '/logos/blackstone.png' },
+  { name: 'Harvard Business School', src: '/logos/harvard-business-school.png' },
 ]
