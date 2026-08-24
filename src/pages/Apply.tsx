@@ -40,7 +40,7 @@ const faqs = [
 
 const timeline = [
   {
-    date: 'Aug 14',
+    date: 'Aug 24',
     title: 'Activities Fair',
     description: 'Meet the team, learn what VCG does, and ask us anything.',
     phase: 'Discover',
@@ -50,6 +50,10 @@ const timeline = [
     title: 'Info Sessions & Coffee Chats',
     description: 'Get a closer look at our projects, culture, and application process.',
     phase: 'Connect',
+    sessions: [
+      { date: 'Wednesday, Aug 26', time: '7:00–8:00 PM', location: 'Rouss-Robertson Hall, Room 123' },
+      { date: 'Thursday, Aug 27', time: '7:00–8:00 PM', location: 'Rouss-Robertson Hall, Room 123' },
+    ],
   },
   {
     date: 'Aug 30',
@@ -151,6 +155,17 @@ export function Apply() {
                     <span className="apply__phase">{item.phase}</span>
                     <h3>{item.title}</h3>
                     {item.description && <p>{item.description}</p>}
+                    {item.sessions && (
+                      <ul className="apply__session-list" aria-label="Info session schedule">
+                        {item.sessions.map((session) => (
+                          <li key={session.date}>
+                            <strong>{session.date}</strong>
+                            <span>{session.time}</span>
+                            <span>{session.location}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    )}
                   </div>
                   {item.featured && <span className="apply__due-badge">Deadline</span>}
                 </li>

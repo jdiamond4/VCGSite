@@ -6,23 +6,19 @@ const stats = [
   {
     value: 'Only paid',
     label: 'Consulting club at UVA',
-    detail: "UVA's only paid consulting club.",
   },
   {
     value: 'Founding',
     label: 'Consulting club on Grounds',
-    detail: "UVA's founding consulting club.",
   },
   {
     value: '3%',
-    label: 'Acceptance rate',
-    detail: 'Fall 2025 applicant cycle.',
+    label: 'Fall 2025 Acceptance Rate',
   },
   {
     value: 'BCG',
     logo: '/logos/bcg.png',
     label: 'Sponsored partner',
-    detail: 'Boston Consulting Group partnership, Spring 2026.',
   },
 ]
 
@@ -91,7 +87,6 @@ export function Stats() {
                 <p className="stats__value">{item.value}</p>
               )}
               <p className="stats__label">{item.label}</p>
-              <p className="stats__detail">{item.detail}</p>
             </li>
           ))}
         </ul>
@@ -99,8 +94,8 @@ export function Stats() {
         <div className="stats__intro">
           <h2 id="stats-heading">Great ideas come from everyone, everywhere.</h2>
           <p className="stats__copy">
-            You don't have to be a business student to join VCG. We seek potential members that have
-            intellectual drive and are willing to experiment with something new.
+            You don't have to be a business student to join VCG. We seek driven members from all
+            schools at UVA.
           </p>
         </div>
 

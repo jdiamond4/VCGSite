@@ -80,7 +80,7 @@ export function Navbar() {
           </div>
           <Link to="/clients">Clients</Link>
           <Link className="nav__cta" to="/apply">
-            Apply
+            Application Details
           </Link>
         </nav>
       </div>
