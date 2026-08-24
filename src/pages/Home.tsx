@@ -5,7 +5,8 @@ import { Stats } from '../components/Stats'
 import { Footer } from '../components/Footer'
 import './Home.css'
 
-const applicationUrl = 'https://forms.gle/LJv3Xh1SJyj2xp3e8'
+const applicationUrl =
+  'https://docs.google.com/forms/d/e/1FAIpQLSdf0Xfl3MmzMN2LzY2qcnw75QN3bTuaVvUx3GlwE2UfIsP3hA/viewform?usp=header'
 const interestFormUrl =
   'https://docs.google.com/forms/d/e/1FAIpQLSdiQm9-l910IgsWcjxRuPtHXqsK5IJ7UTEEHbVHxUqlqcynBw/viewform?usp=dialog'
 

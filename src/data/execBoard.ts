@@ -12,7 +12,7 @@ export const execBoard: ExecMember[] = [
     role: 'President',
     image: '/exec/eric-brown.jpg',
     linkedin: 'https://www.linkedin.com/in/ebrown-/',
-    bio: 'Eric is a fourth-year student from Monmouth County, New Jersey, studying Mathematics and Economics. He joined VCG in his second semester and has primarily advised clients in the synthetic biomaterials and biodegradable materials industries. Outside of VCG, Eric volunteers as President of the Virginia Childhood Cancer Project. This upcoming summer, he will be joining Strategy& as a Deals Strategy intern in New York. In his free time, he enjoys playing pickup basketball and surfing on the Jersey Shore.',
+    bio: 'Eric is a fourth-year student from Monmouth County, New Jersey, studying Mathematics and Economics. He joined VCG in his second semester and has primarily advised clients in the synthetic biomaterials and biodegradable materials industries. Outside of VCG, Eric volunteers as President of the Virginia Childhood Cancer Project. This past summer, he joined Strategy& as a Deals Strategy intern in New York City. In his free time, he enjoys playing pickup basketball and surfing on the Jersey Shore.',
   },
   {
     name: 'Adia Menna',
@@ -33,14 +33,14 @@ export const execBoard: ExecMember[] = [
     role: 'VP of External Relations',
     image: '/exec/lyle-dillion.jpg',
     linkedin: 'https://www.linkedin.com/in/lyle-dillion-9b6b00282/',
-    bio: 'Lyle is a fourth-year student studying Commerce with concentrations in Finance and IT. She has been with VCG since the first semester of her second year at UVA, gaining experience working with AI-focused investment and M&A start-up clients. This summer, Lyle is joining Houlihan Lokey as an Investment Banking Summer Analyst in New York City. Outside of VCG, Lyle serves as the Chief Recruitment Officer for Smart Women Securities. She enjoys spending time with friends and family, trying new Cville restaurants, and running.',
+    bio: 'Lyle is a fourth-year student studying Commerce with concentrations in Finance and IT. She has been with VCG since the first semester of her second year at UVA, gaining experience working with AI-focused investment and M&A start-up clients. Last summer, Lyle interned at Houlihan Lokey as an Investment Banking Summer Analyst in New York City. Outside of VCG, Lyle serves as the Chief Recruitment Officer for Smart Women Securities. She enjoys spending time with friends and family, trying new Cville restaurants, and running.',
   },
   {
     name: 'Caroline Bagley',
     role: 'Director of External Relations',
     image: '/exec/caroline-bagley.jpg',
     linkedin: 'https://www.linkedin.com/in/caroline-bagley-88223b325/',
-    bio: 'Caroline is a third-year majoring in Commerce and minoring in Philosophy. She has been with VCG since her second semester at UVA, gaining experience working with M&A and consulting clients. Outside of VCG, she is an active member of Smart Woman Securities and works with the nonprofit Students Shoulder-to-Shoulder on their board of directors. She previously interned at Boston Consulting Group in Dallas and enjoys spending time with her friends and family.',
+    bio: 'Caroline is a third-year majoring in Commerce and minoring in Philosophy. She has been with VCG since her second semester at UVA, gaining experience working with M&A and consulting clients. Outside of VCG, she is an active member of Smart Woman Securities and works with the nonprofit Students Shoulder-to-Shoulder on their board of directors. This upcoming summer, Caroline will be joining the Boston Consulting Group in Dallas, Texas. She previously interned at Boston Consulting Group in Dallas and enjoys spending time with her friends and family.',
   },
   {
     name: 'Eli Kesser',
@@ -82,7 +82,7 @@ export const execBoard: ExecMember[] = [
     role: 'Director of Development',
     image: '/exec/ayaan-tabani.jpg',
     linkedin: 'https://www.linkedin.com/in/ayaantabani',
-    bio: 'Ayaan is a third year from Houston, TX majoring in Applied Statistics. He’s been apart of VCG since the first semester of his first year and has worked with fintech and educational SaaS clients. Outside of VCG, he\'s involved in GMG, the competitive travel club squash team, and the QuestBridge Scholars network. He’s worked at Knight Investment Group, MDpanel (portco of Aquiline Capital Partners), Northbank Capital Management, and now works for Tuck Advisors. In his leisure, he enjoys reading philosophy, training weighted calisthenics, and watching UFC.',
+    bio: 'Ayaan is a third year from Houston, TX majoring in Applied Statistics. He’s been a part of VCG since the first semester of his first year and has worked with fintech and educational SaaS clients. Outside of VCG, he\'s involved in GMG, the competitive travel club squash team, and the QuestBridge Scholars network. He’s worked at Knight Investment Group, MDpanel (portco of Aquiline Capital Partners), Northbank Capital Management, and for Tuck Advisors. This upcoming summer, Ayaan will be joining Stifel Financial Corp. as an investment banking intern in New York City. In his leisure, he enjoys reading philosophy, training weighted calisthenics, and watching UFC.',
   },
   {
     name: 'Tony Xu',
