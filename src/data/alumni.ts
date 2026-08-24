@@ -121,6 +121,7 @@ const classOf2025: AlumniMember[] = [
     title: 'Investment Banking Analyst',
     company: 'PJT Partners',
     image: '/alumni/zachary-nachlis.jpg',
+    companyLogo: '/logos/pjt-partners.png',
     linkedin: 'https://www.linkedin.com/in/zacharynachlis/',
   },
   {
