@@ -14,7 +14,7 @@ export function Alumni() {
             <p className="eyebrow">Our community</p>
             <h1 id="alumni-heading">Alumni</h1>
             <p className="alumni__intro">
-              VCG alumni lead across industries. View some notable recent alumni below.
+              VCG alumni lead across industries.
             </p>
           </div>
         </section>
@@ -40,7 +40,7 @@ export function Alumni() {
             >
               <div className="alumni__class-heading">
                 <div>
-                  <p className="eyebrow">Notable recent alumni</p>
+                  <p className="eyebrow">Recent alumni</p>
                   <h2 id={`class-${year}-heading`}>Class of {year}</h2>
                 </div>
               </div>
