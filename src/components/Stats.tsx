@@ -13,7 +13,11 @@ const stats = [
   },
   {
     value: '3%',
-    label: 'Fall 2025 Acceptance Rate',
+    label: 'Spring 2026 Acceptance Rate',
+  },
+  {
+    value: '93%',
+    label: 'Acceptance to McIntire School of Commerce',
   },
   {
     value: 'BCG',

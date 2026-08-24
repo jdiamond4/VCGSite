@@ -68,14 +68,14 @@ export const execBoard: ExecMember[] = [
     role: 'VP of Development',
     image: '/exec/katelyn-chu.jpg',
     linkedin: 'https://www.linkedin.com/in/katelyn-chu',
-    bio: 'Katelyn is a fourth-year studying economics and global security & justice, with a minor in religious studies. She has been a part of VCG since her second year, and has been involved in projects in the technology, wellness, and education spaces. This coming summer, she will work as a risk consulting intern at PwC. In her free time, Katelyn enjoys reading memoirs, running, and playing club softball at UVA.',
+    bio: 'Katelyn is a fourth-year studying economics and global security & justice, with a minor in religious studies. She has been a part of VCG since her second year, and has been involved in projects in the technology, wellness, and education spaces. This past summer, she interned as a risk consulting intern at PwC. In her free time, Katelyn enjoys reading memoirs, running, and playing club softball at UVA.',
   },
   {
     name: 'Alex Elias',
     role: 'Director of Development',
     image: '/exec/alex-elias.jpg',
     linkedin: 'https://www.linkedin.com/in/alex-elias-3b653a276/',
-    bio: 'Alex is a third-year double majoring in Data Science & Economics. He has been with VCG since his second semester and has worked with financial services and AI automation clients. Outside of VCG, Alex is also involved with Madison House at UVA and works as a food runner at Trinity on the Corner. In his free time, he enjoys the outdoors, working out, and playing and watching sports.',
+    bio: 'Alex is a third-year double majoring in Data Science & Economics. He has been with VCG since his second semester and has worked with financial services and AI automation clients. Outside of VCG, Alex is also involved with Madison House at UVA and works as a food runner at Trinity on the Corner. This upcoming summer, Alex will be joining McKinsey & Company in Atlanta, Georgia. In his free time, he enjoys the outdoors, working out, and playing and watching sports.',
   },
   {
     name: 'Ayaan Tabani',
@@ -103,14 +103,14 @@ export const execBoard: ExecMember[] = [
     role: 'VP of Recruitment',
     image: '/exec/isabel-chen.jpg',
     linkedin: 'https://www.linkedin.com/in/isabel-chen-8b347628a',
-    bio: 'Isabel is a fourth-year studying Commerce and Economics. She has been involved with VCG since her second semester and has worked with clients in food and healthcare and education markets. Outside of VCG, Isabel volunteers with Creating Assets, Savings, and Hope. Last summer, she interned at Ellucian, an education technology company that is also a VCG client. In the summer of 2026, she will be an Associate Consultant intern at Mastercard in Boston. In her free time, Isabel enjoys yoga, running, art, and hanging out with friends.',
+    bio: 'Isabel is a fourth-year studying Commerce and Economics. She has been involved with VCG since her second semester and has worked with clients in food and healthcare and education markets. Outside of VCG, Isabel volunteers with Creating Assets, Savings, and Hope. Last summer, she interned at Ellucian, an education technology company that is also a VCG client. In the summer of 2026, she worked as an Associate Consultant intern at Mastercard in Boston. In her free time, Isabel enjoys yoga, running, art, and hanging out with friends.',
   },
   {
     name: 'Andrew Shah',
     role: 'VP of Alumni Relations',
     image: '/exec/andrew-shah.jpg',
     linkedin: 'https://www.linkedin.com/in/andrew-shah-697796250/',
-    bio: 'Andrew is a third year from Bronxville, NY, who joined VCG during his first semester at UVA. Within VCG, he has enjoyed working with healthcare, college consulting, and alternative asset management clients. Outside of VCG, Andrew is a member of the UVA Club Squash team and spent this past summer interning at a private equity firm. In his free time, he enjoys playing padel tennis and spending time with friends.',
+    bio: 'Andrew is a third year from Bronxville, NY, who joined VCG during his first semester at UVA. Within VCG, he has enjoyed working with healthcare, college consulting, and alternative asset management clients. Outside of VCG, Andrew is a member of the UVA Club Squash team and spent this past summer interning at a private equity firm. This upcoming summer, he will be joining Citi as an Investment Banking intern in New York City. In his free time, he enjoys playing padel tennis and spending time with friends.',
   },
   {
     name: 'James Brabham',
