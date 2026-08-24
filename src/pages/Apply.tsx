@@ -53,7 +53,7 @@ const timeline = [
     phase: 'Connect',
     sessions: [
       { date: 'Wednesday, Aug 26', time: '7:00–8:00 PM', location: 'Rouss-Robertson Hall, Room 123' },
-      { date: 'Thursday, Aug 27', time: '7:00–8:00 PM', location: 'Rouss-Robertson Hall, Room 123' },
+      { date: 'Thursday, Aug 27', time: '7:00–8:00 PM', location: 'Rouss-Robertson Hall, Room 120' },
     ],
   },
   {

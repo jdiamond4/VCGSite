@@ -16,7 +16,7 @@ const stats = [
     label: 'Spring 2026 Acceptance Rate',
   },
   {
-    value: '93%',
+    value: '94%',
     label: 'Acceptance to McIntire School of Commerce',
   },
   {

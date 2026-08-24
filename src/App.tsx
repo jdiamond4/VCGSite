@@ -1,5 +1,5 @@
 import { useEffect } from 'react'
-import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom'
+import { BrowserRouter, Routes, Route, Navigate, useLocation } from 'react-router-dom'
 import { Home } from './pages/Home'
 import { Clients } from './pages/Clients'
 import { Exec } from './pages/Exec'
@@ -7,6 +7,7 @@ import { ProjectTeams } from './pages/ProjectTeams'
 import { Alumni } from './pages/Alumni'
 import { Apply } from './pages/Apply'
 import { NotFound } from './pages/NotFound'
+import { normalizeLegacyPath } from './legacyPaths'
 
 function ScrollToTop() {
   const { pathname, hash } = useLocation()
@@ -25,6 +26,19 @@ function ScrollToTop() {
   return null
 }
 
+/** Catch leftover `*.html` / old Mobirise paths and send them to clean routes. */
+function LegacyOrNotFound() {
+  const location = useLocation()
+  const target = normalizeLegacyPath(location.pathname + location.search + location.hash)
+  const current = location.pathname + location.search + location.hash
+
+  if (target !== current) {
+    return <Navigate to={target} replace />
+  }
+
+  return <NotFound />
+}
+
 export default function App() {
   return (
     <BrowserRouter>
@@ -36,7 +50,7 @@ export default function App() {
         <Route path="/project-teams" element={<ProjectTeams />} />
         <Route path="/alumni" element={<Alumni />} />
         <Route path="/apply" element={<Apply />} />
-        <Route path="*" element={<NotFound />} />
+        <Route path="*" element={<LegacyOrNotFound />} />
       </Routes>
     </BrowserRouter>
   )

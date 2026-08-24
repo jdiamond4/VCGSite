@@ -63,13 +63,14 @@ const classOf2026: AlumniMember[] = [
     linkedin: 'https://www.linkedin.com/in/katewalldorf/',
   },
   {
-    id: 'kendall-freese',
-    name: 'Kendall Freese',
+    id: 'rubin-jha',
+    name: 'Rubin Jha',
     graduationYear: 2026,
     title: 'Investment Banking Analyst',
-    company: 'Berkshire Global Advisors',
-    image: '/alumni/kendall-freese.jpg',
-    linkedin: 'https://www.linkedin.com/in/kendall-freese-2439aa244/',
+    company: 'Ducera',
+    image: '/alumni/rubin-jha.jpg',
+    companyLogo: '/logos/ducera.png',
+    linkedin: 'https://www.linkedin.com/in/rubinjha/',
   },
 ]
 
@@ -144,6 +145,16 @@ const classOf2025: AlumniMember[] = [
     companyLogo: '/logos/oliver-wyman.png',
     linkedin: 'https://www.linkedin.com/in/vazira-ahmedjonova/',
   },
+  {
+    id: 'jason-he',
+    name: 'Jason He',
+    graduationYear: 2025,
+    title: 'Co-Founder',
+    company: 'Y Combinator',
+    image: '/alumni/jason-he.jpg',
+    companyLogo: '/logos/y-combinator.png',
+    linkedin: 'https://www.linkedin.com/in/jasonjche/',
+  },
 ]
 
 const classOf2024: AlumniMember[] = [
@@ -188,6 +199,16 @@ const classOf2024: AlumniMember[] = [
     linkedin: 'https://www.linkedin.com/in/grayson-mccombs/',
   },
   {
+    id: 'catherine-irons',
+    name: 'Catherine Irons',
+    graduationYear: 2024,
+    title: 'Associate Consultant',
+    company: 'Bain & Company',
+    image: '/alumni/catherine-irons.jpg',
+    companyLogo: '/logos/bain.png',
+    linkedin: 'https://www.linkedin.com/in/catherine-irons/',
+  },
+  {
     id: 'aryan-pandya',
     name: 'Aryan Pandya',
     graduationYear: 2024,
@@ -196,6 +217,16 @@ const classOf2024: AlumniMember[] = [
     image: '/alumni/aryan-pandya.png',
     companyLogo: '/logos/alpine-investors.png',
     linkedin: 'https://www.linkedin.com/in/aryan-pandya/',
+  },
+  {
+    id: 'dora-friedman',
+    name: 'Dora Friedman',
+    graduationYear: 2024,
+    title: 'Consultant',
+    company: 'Deloitte',
+    image: '/alumni/dora-friedman.jpg',
+    companyLogo: '/logos/deloitte-alumni.png',
+    linkedin: 'https://www.linkedin.com/in/dorafriedman/',
   },
 ]
 

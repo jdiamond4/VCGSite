@@ -8,7 +8,7 @@ import './Home.css'
 const applicationUrl =
   'https://docs.google.com/forms/d/e/1FAIpQLSdf0Xfl3MmzMN2LzY2qcnw75QN3bTuaVvUx3GlwE2UfIsP3hA/viewform?usp=header'
 const interestFormUrl =
-  'https://docs.google.com/forms/d/e/1FAIpQLSdiQm9-l910IgsWcjxRuPtHXqsK5IJ7UTEEHbVHxUqlqcynBw/viewform?usp=dialog'
+  'https://docs.google.com/forms/d/e/1FAIpQLSfOuMGl2Bxca3v_6F-nPWpYSvxZrcIkzUQneCXOWPbyCrKU-Q/viewform?usp=header'
 
 export function Home() {
   return (
