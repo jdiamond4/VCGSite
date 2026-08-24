@@ -21,7 +21,7 @@ export function Home() {
           <div className="invite__inner">
             <div className="invite__content">
               <h2 id="invite-heading">Join the next cohort</h2>
-              <p>Applications open each semeseter, no prior consulting experience required.</p>
+              <p>Applications open each semester, no prior consulting experience required.</p>
               <div className="invite__actions">
                 <a className="invite__btn" href={applicationUrl} target="_blank" rel="noreferrer">
                   Apply Now

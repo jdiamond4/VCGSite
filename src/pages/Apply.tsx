@@ -130,6 +130,7 @@ export function Apply() {
             <aside className="apply__deadline" aria-label="Application deadline">
               <span>Applications due</span>
               <strong>Aug 30</strong>
+              <small>at 11:59pm</small>
             </aside>
           </div>
         </section>

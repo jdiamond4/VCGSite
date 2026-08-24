@@ -78,12 +78,7 @@ export function Clients() {
       <main className="clients">
         <section className="clients__hero" aria-labelledby="clients-heading">
           <div className="clients__hero-inner">
-            <p className="eyebrow">Client services</p>
-            <h1 id="clients-heading">Semester-long teams. Real recommendations.</h1>
-            <p>
-              A dedicated VCG consulting team works with you for a semester to clarify the problem,
-              pressure-test options, and deliver actionable recommendations.
-            </p>
+            <h1 id="clients-heading">Client Services</h1>
           </div>
         </section>
 
