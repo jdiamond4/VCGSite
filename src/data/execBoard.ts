@@ -40,7 +40,7 @@ export const execBoard: ExecMember[] = [
     role: 'Director of External Relations',
     image: '/exec/caroline-bagley.jpg',
     linkedin: 'https://www.linkedin.com/in/caroline-bagley-88223b325/',
-    bio: 'Caroline is a third-year majoring in Commerce and minoring in Philosophy. She has been with VCG since her second semester at UVA, gaining experience working with M&A and consulting clients. Outside of VCG, she is an active member of Smart Woman Securities and works with the nonprofit Students Shoulder-to-Shoulder on their board of directors. This upcoming summer, Caroline will be joining the Boston Consulting Group in Dallas, Texas. She previously interned at Boston Consulting Group in Dallas and enjoys spending time with her friends and family.',
+    bio: 'Caroline is a third-year majoring in Commerce and minoring in Philosophy. She has been with VCG since her second semester at UVA, gaining experience working with M&A and consulting clients. Outside of VCG, she is an active member of Smart Woman Securities and works with the nonprofit Students Shoulder-to-Shoulder on their board of directors. This upcoming summer, Caroline will be joining the Boston Consulting Group in Dallas, Texas.',
   },
   {
     name: 'Eli Kesser',
