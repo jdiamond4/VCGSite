@@ -156,13 +156,20 @@ export function Clients() {
               <ul className="clients__partner-list">
                 {[...partners, ...partners].map((partner, index) => (
                   <li key={`${partner.name}-${index}`} aria-hidden={index >= partners.length}>
-                    <div className={`clients__partner-logo${partner.logo ? ' has-logo' : ''}`}>
+                    <a
+                      className={`clients__partner-logo${partner.logo ? ' has-logo' : ''}`}
+                      href={partner.website}
+                      target="_blank"
+                      rel="noreferrer"
+                      tabIndex={index >= partners.length ? -1 : undefined}
+                      aria-label={`Visit ${partner.name} website`}
+                    >
                       {partner.logo ? (
                         <img src={partner.logo} alt={`${partner.name} logo`} />
                       ) : (
                         <span>Logo TBD</span>
                       )}
-                    </div>
+                    </a>
                     <div className="clients__partner-details">
                       <h3>{partner.name}</h3>
                       <a
