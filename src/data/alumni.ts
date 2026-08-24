@@ -123,6 +123,26 @@ const classOf2025: AlumniMember[] = [
     image: '/alumni/zachary-nachlis.jpg',
     linkedin: 'https://www.linkedin.com/in/zacharynachlis/',
   },
+  {
+    id: 'angelina-cherian',
+    name: 'Angelina Cherian',
+    graduationYear: 2025,
+    title: 'Investment Banking Analyst',
+    company: 'Houlihan Lokey',
+    image: '/alumni/angelina-cherian.png',
+    companyLogo: '/logos/houlihan-lokey.jpg',
+    linkedin: 'https://www.linkedin.com/in/angelina-cherian-633620217/',
+  },
+  {
+    id: 'vazira-ahmedjonova',
+    name: 'Vazira Ahmedjonova',
+    graduationYear: 2025,
+    title: 'Consultant',
+    company: 'Oliver Wyman',
+    image: '/alumni/vazira-ahmedjonova.png',
+    companyLogo: '/logos/oliver-wyman.png',
+    linkedin: 'https://www.linkedin.com/in/vazira-ahmedjonova/',
+  },
 ]
 
 const classOf2024: AlumniMember[] = [
@@ -167,14 +187,14 @@ const classOf2024: AlumniMember[] = [
     linkedin: 'https://www.linkedin.com/in/grayson-mccombs/',
   },
   {
-    id: 'yasaar-ellis',
-    name: 'Yasaar Ellis',
+    id: 'aryan-pandya',
+    name: 'Aryan Pandya',
     graduationYear: 2024,
-    title: 'Technology Risk Assurance Staff',
-    company: 'EY',
-    image: '/alumni/yasaar-ellis.jpg',
-    companyLogo: '/logos/ey-alumni.png',
-    linkedin: 'https://www.linkedin.com/in/yasaar-ellis-28b6931ab/',
+    title: 'Investor',
+    company: 'Alpine Investors',
+    image: '/alumni/aryan-pandya.png',
+    companyLogo: '/logos/alpine-investors.png',
+    linkedin: 'https://www.linkedin.com/in/aryan-pandya/',
   },
 ]
 

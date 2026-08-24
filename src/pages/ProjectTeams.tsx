@@ -11,7 +11,7 @@ export function ProjectTeams() {
         <section className="team-page__hero" aria-labelledby="project-teams-heading">
           <div className="team-page__hero-inner">
             <p className="eyebrow">Our Experts</p>
-            <h1 id="project-teams-heading">Project Teams</h1>
+            <h1 id="project-teams-heading">Project Team 2026</h1>
           </div>
         </section>
 
