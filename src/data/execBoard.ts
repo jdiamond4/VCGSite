@@ -26,7 +26,7 @@ export const execBoard: ExecMember[] = [
     role: 'VP of Operations',
     image: '/exec/anika-rekulapelli.jpg',
     linkedin: 'https://www.linkedin.com/in/anika-rekulapelli-848b73292/',
-    bio: 'Anika is a fourth-year double majoring in Systems Engineering and Economics. She has been with VCG since her first semester at UVA, working with sustainability-focused clients and a negotiations consulting firm. Outside of VCG, she is involved with University Programs Council and UVA\'s Office for Sustainability. Last summer, she consulted for a Swedish professional soccer team to design a rainwater collection system and also studied data center emissions as a UVA Decarbonization Academy intern. This coming summer, she will be interning in FTI\'s Network Industries Strategies group in their McLean, VA office. In her free time, she like to run, play pickleball, bake, and follow her favorite sports teams.',
+    bio: 'Anika is a fourth-year double majoring in Systems Engineering and Economics. She has been with VCG since her first semester at UVA, working with sustainability-focused clients and a negotiations consulting firm. Outside of VCG, she is involved with University Programs Council and UVA\'s Office for Sustainability. Last summer, she consulted for a Swedish professional soccer team to design a rainwater collection system and also studied data center emissions as a UVA Decarbonization Academy intern. This past summer, she interned in FTI\'s Network Industries Strategies group in their McLean, VA office. In her free time, she likes to run, play pickleball, bake, and follow her favorite sports teams.',
   },
   {
     name: 'Lyle Dillion',

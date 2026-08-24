@@ -209,11 +209,7 @@
   padding: 0;
   display: flex;
   gap: 1rem;
-  animation: partner-scroll 45s linear infinite;
-}
-
-.clients__partner-marquee:hover .clients__partner-list {
-  animation-play-state: paused;
+  animation: partner-scroll 32s linear infinite;
 }
 
 .clients__partner-list li {
