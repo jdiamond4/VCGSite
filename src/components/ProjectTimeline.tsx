@@ -104,7 +104,6 @@ export function ProjectTimeline() {
         <div className="clients__section-head clients__timeline-head">
           <p className="eyebrow">From kickoff to delivery</p>
           <h2 id="timeline-heading">Sample project timeline</h2>
-          <p>One semester. One team. A clear arc from first meeting to final recommendations.</p>
         </div>
 
         <div className="timeline" ref={trackRef}>
